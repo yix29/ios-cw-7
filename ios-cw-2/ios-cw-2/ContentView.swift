@@ -38,21 +38,29 @@ struct ContentView: View {
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to red
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                    name = "gamedev"
+                        .onTapGesture {
+                            name="gamedv"
+                        }
                         // cahnge name to Gamedev
 
                     Text("Web")
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to blue
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                    name = "web"
-                        // cahnge name to web
+                        .onTapGesture {
+                            name="web"
+                        }
+                    // cahnge name to web
                         
                     Text("Android")
                         .frame(width: 250, height: 60)
                         .background(.black)// bonus change it to green
                         .clipShape(RoundedRectangle(cornerRadius: 35))
-                    name = "android"
+                        .onTapGesture {
+                            name="ANDROID"
+                        }
+                            
+                        }
                         // cahnge name to Android
                 }
             
@@ -61,7 +69,7 @@ struct ContentView: View {
             .foregroundColor(.white)
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
